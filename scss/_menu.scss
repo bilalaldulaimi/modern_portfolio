@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
     }
 
@@ -80,15 +80,15 @@
         @include easeOut;
     
     &.show {
-        // Slide in form bottom
+        // Slide in from bottom
         transform: translate3d(0, 0, 0);
     }
 
     .portrait {
-        width: 250px;
-        height: 250px;
-        background: url('../img/Bilal1.jpg');
-        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background: url('../img/bilal1.jpg');
+        border-radius: 30%;
         border: solid 3px $secondary-color;
     }
     }
@@ -97,8 +97,8 @@
         transform: translate3d(600px, 0, 0);
         @include easeOut;
 
-        // Slide in form right
         &.show {
+            // Slide in form right
             transform: translate3d(0, 0, 0);
         }
 
@@ -113,7 +113,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
